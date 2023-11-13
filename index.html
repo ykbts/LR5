@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Якобець К.Р. ІК-13, ЛР№5</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Події. Регулярні вирази.">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <input type="text" id="pib" name="pib" pattern="[А-ЩЬЮЯа-щьюяІіЇїЄє]+\s[А-ЩЬЮЯа-щьюяІіЇїЄє]\.[А-ЩЬЮЯа-щьюяІіЇїЄє]\." placeholder="ПІБ" required oninput="checkInput(this)">
+            <input type="tel" id="phone" name="phone" pattern="\(\d{3}\)-\d{3}-\d{2}-\d{2}" placeholder="Телефон" required oninput="checkInput(this)">
+            <input type="text" id="faculty" name="faculty" pattern="[А-ЩЬЮЯа-щьюяІіЇїЄє]{4}" placeholder="Факультет" required oninput="checkInput(this)">
+            <input type="date" id="dob" name="dob" pattern="\d{2}\.\d{2}\.\d{4}" placeholder="Дата народження" required oninput="checkInput(this)">
+            <input type="text" id="address" name="address" pattern="м\.\s\d{6}" placeholder="Адреса" required oninput="checkInput(this)">
+                
+            <button type="button" onclick="submitForm()">Підтвердити</button>    
+        </form>
+        <table id="colorTable"></table>
+        <input type="color" id="html5colorpicker">
+    </div>
+</body>
+</html>
